@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyTrack - Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#2196f3">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+  <source src="videos/default.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+  <div class="project-name">SkyTrack 🌤️</div>
+  <div class="weather-container">
+    <h1 class="main-title">LIVE WEATHER FORECAST</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Search for a city..." />
+      <button onclick="getWeather()">🔍</button>
+      
+    </div>
+    <div class="weather-card" id="weatherResult">
+      <p>Enter a city to see weather details</p>
+    </div>
+  </div>
+  <!-- Current Weather -->
+<div id="weatherResult" class="weather-current"></div>
+
+<!-- 7-Day Forecast -->
+<div class="forecast-section" style="display: none;">
+  <h3>3-Day Forecast</h3>
+  <div id="forecastContainer" class="forecast-container"></div>
+</div>
+  <script src="script.js?v=1.0.1"></script>
+</body>
+</html>
