@@ -53,7 +53,7 @@ SkyTrack/
 
 Clone the repo:
 
-git clone https://github.com/your-username/skytrack.git
+git clone https://github.com/Educative-Anupam/SkyTrack.git
 
 
 Open the folder in VS Code or any IDE.
